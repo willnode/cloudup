@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Cloud up</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="sha1.js"></script>
+    <script src="cookie.js"></script>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div id="dropbox">
+        <h1>Signed Image Upload to Cloudinary</h1>
+        <form class="my-form">
+            <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+            <p>Please fill the required information in the form below. It will be saved to your browser cookie.</p>
+            <div class="parameters">
+                <input type="text" id="cloudName" placeholder="Cloud Name">
+                <input type="text" id="uploadPreset" placeholder="Upload Preset">
+                <input type="text" id="apiKey" placeholder="API Key">
+                <input type="text" id="apiSecret" placeholder="API Secret">
+                <input type="file" name="fileElem" id="fileElem" multiple accept="image/*" style="display:none" onchange="handleFiles(this.files)">
+                <label for="fileElem" class="btn">Select Files...</label>
+            </div>
+        </form>
+        <div class="progress-bar" id="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <p id="url"></p>
+        <div id="gallery"> </div>
+    </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+#dropbox {
+    border: 2px dashed #ccc;
+    padding-left: 8px;
+    font-family: "Segoe UI";
+    padding: 10px;
+}
+
+.my-form {
+    margin-top: 10px;
+}
+
+.gallery {
+    margin: 10px;
+}
+
+.gallery > img {
+    margin: 10px;
+}
+
+.progress-bar {
+    width: 50%;
+    position: relative;
+    height: 8px;
+    margin: 10px auto;
+    background-color: gray;
+}
+
+.progress-bar .progress {
+    height: 8px;
+    background-color: #07c;
+    width: 0;
+}
+
+p {
+ font-size: 0.8em;
+}
+
+.parameters > * {
+    display: inline;
+    width: 20%;
+    min-width: 170px;
+    padding: 7px 3px;
+}
+
+.error {
+    color: red;
+}
+
+.btn {
+    cursor: pointer;
+    border: 1px solid grey;
+    font-size: 13.3333px;
+}
+
+.btn:active {
+    outline: -webkit-focus-ring-color auto 5px;    
+}

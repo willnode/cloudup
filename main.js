@@ -19,12 +19,12 @@ window.onload = function () {
 
 function handle (value, callback)
 {
-    callback.setValue(getCookie(value));
+    callback.setValue(localStorage.getItem(value));
     var ui = document.getElementById(value);
-    ui.value = getCookie(value);
+    ui.value = localStorage(value);
     ui.oninput = () => {
         callback.setValue(ui.value);
-        setCookie(value, ui.value, 30);
+        localStorage.setItem(value, ui.value);
     }
 }
 

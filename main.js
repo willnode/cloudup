@@ -21,7 +21,7 @@ function handle (value, callback)
 {
     callback.setValue(localStorage.getItem(value));
     var ui = document.getElementById(value);
-    ui.value = localStorage(value);
+    ui.value = localStorage.getItem(value);
     ui.oninput = () => {
         callback.setValue(ui.value);
         localStorage.setItem(value, ui.value);

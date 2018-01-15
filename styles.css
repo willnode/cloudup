@@ -11,6 +11,11 @@
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .my-form {
     margin-top: 10px;
 }
@@ -59,5 +64,5 @@ p {
 }
 
 .btn:active {
-    outline: -webkit-focus-ring-color auto 5px;    
+    outline: -webkit-focus-ring-color auto 5px;
 }

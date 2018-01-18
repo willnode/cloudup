@@ -51,6 +51,12 @@ function drop(e) {
     }
 }
 
+function handleFiles(files) {
+    for (var i = 0; i < files.length; i++) {
+        uploadFile(files[i]); // call the function to upload the file
+    }
+}
+
 
 /* *********** Upload file to Cloudinary ******************** */
 // http://cloudinary.com/documentation/upload_images#creating_api_authentication_signatures
